@@ -9,6 +9,7 @@ export default Ember.Route.extend({
       });
       evaluation.save().then( () => {
         alert("Evaluacion Ok");
+        this.transitionTo('evaluations.evaluation', evaluation.get('id'));
       },
       function(){
         alert("No se registro la evaluación");

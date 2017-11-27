@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('home');
   this.route('evaluations', function() {
     this.route('new');
+    this.route('evaluation', {path:'evaluation/:evaluation_id'}, function(){});
   });
 });
 
