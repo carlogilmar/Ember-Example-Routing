@@ -1,6 +1,8 @@
 export default function() {
   this.get('/evaluations');
   this.post('/evaluations');
+  this.get('/skill-tests');
+  this.post('/skill-tests');
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
