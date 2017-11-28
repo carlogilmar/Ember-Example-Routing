@@ -1,3 +1,12 @@
 <h3>Index de Evaluations</h3>
 
-<small>TODO: Pintar aquí las evaluaciones</small>
+
+{{#if model}}
+	<ul>
+		{{#each model as |evaluation|}}
+			<li>{{evaluation.title}}</li>
+		{{/each}}
+	</ul>
+{{else}}
+	<small> Sin Evaluaciones Registradas</small>
+{{/if}}
