@@ -4,7 +4,7 @@
 {{#if model}}
 	<ul>
 		{{#each model as |evaluation|}}
-			<li>{{evaluation.title}}</li>
+      <li> {{#link-to 'evaluations.evaluation' evaluation.id}} {{evaluation.title}} {{/link-to}}</li>
 		{{/each}}
 	</ul>
 {{else}}
